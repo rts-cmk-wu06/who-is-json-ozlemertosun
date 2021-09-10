@@ -1,41 +1,21 @@
+//Øvelse 6: 
+//fetch promises based 
 
-//øvelse 1:
-const jsonObjects = 
-{ "classMates" : [ 
-    {
-    "firstname" : "Pamela", 
-    "lastname" : "Anderson", 
-    "age" : 54, 
-    "haircolor" : "Blond", 
-    "shoesize": 39
-    }, 
+let ul = document.querySelector("#list");
 
-    {
-    "firstname" : "David", 
-    "lastname" : "Hasselhof", 
-    "age" : 69, 
-    "haircolor" : "Brown", 
-    "shoesize": 44
-    }, 
+fetch("js/team.json")
+    //.then(response => console.log(response.json()))
+    .then(response => response.json())
+    .then( data => {
+        data.classMates.forEach(e => {
+            let listitem = document.createElement("li");
+            listitem.textContent = `${e.firstname} ${e.lastname} ${e.age} ${e.haircolor} ${e.shoesize}`;
+            ul.appendChild(listitem);
+    });
+});
 
-    {
-    "firstname" : "Jeremy", 
-    "lastname" : "Jackson", 
-    "age" : 40, 
-    "haircolor" : "Brown", 
-    "shoesize" : 43
-    }, 
 
-    {
-    "firstname" : "Yasmine", 
-    "lastname" : "Bleeth", 
-    "age" : 53, 
-    "haircolor" : "Brown", 
-    "shoesize" : 38
-    }
-]
-}
-
+        
 //øvelse 2:
 //jsonObjects.classMates.forEach(e => console.log(e.firstname));
 
@@ -59,9 +39,5 @@ jsonObjects.classMates.forEach(e => {
 
 //øvelse 5: 
 //se fil: team.json
-
-
-
-
 
 

@@ -1,0 +1,35 @@
+
+{ "classMates" : [ 
+    {
+    "firstname" : "Pamela", 
+    "lastname" : "Anderson", 
+    "age" : 54, 
+    "haircolor" : "Blond", 
+    "shoesize": 39
+    }, 
+
+    {
+    "firstname" : "David", 
+    "lastname" : "Hasselhof", 
+    "age" : 69, 
+    "haircolor" : "Brown", 
+    "shoesize": 44
+    }, 
+
+    {
+    "firstname" : "Jeremy", 
+    "lastname" : "Jackson", 
+    "age" : 40, 
+    "haircolor" : "Brown", 
+    "shoesize" : 43
+    }, 
+
+    {
+    "firstname" : "Yasmine", 
+    "lastname" : "Bleeth", 
+    "age" : 53, 
+    "haircolor" : "Brown", 
+    "shoesize" : 38
+    }
+]
+}
